@@ -16,3 +16,18 @@ It supports user signup, login, deposits, withdrawals, transaction history, and 
 ---
 
 ## 📂 Project Structure
+bank-project/
+├─ app.py
+├─ db.sql
+├─ requirements.txt
+├─ .gitignore
+├─ templates/
+│ ├─ base.html
+│ ├─ index.html
+│ ├─ signup.html
+│ ├─ login.html
+│ ├─ dashboard.html
+│ ├─ profile.html
+│ └─ transactions.html
+└─ static/
+└─ style.css
