@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Profile | MyBank{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-7">
+    <div class="card p-4">
+      <h4 class="mb-3">Profile Information</h4>
+      <form method="post">
+        <div class="mb-3">
+          <label class="form-label">Full Name</label>
+          <input type="text" name="full_name" value="{{ user.full_name }}" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" value="{{ user.email }}" class="form-control" readonly>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <label class="form-label">Phone</label>
+            <input type="text" name="phone" value="{{ user.phone }}" class="form-control">
+          </div>
+          <div class="col">
+            <label class="form-label">DOB</label>
+            <input type="date" name="dob" value="{{ user.dob }}" class="form-control">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Address</label>
+          <textarea name="address" class="form-control" rows="2">{{ user.address }}</textarea>
+        </div>
+        <button class="btn btn-primary w-100">Update</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
